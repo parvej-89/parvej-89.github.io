@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Game Booster for Android</title>
+<style>
+body{margin:0;background:#0b120e;color:#e8f5ec;font-family:system-ui,sans-serif;line-height:1.5}
+main{max-width:560px;margin:0 auto;padding:28px 18px 60px}
+h1{color:#00e676;margin:0 0 6px;font-size:28px}
+p{color:#b7c9bd}
+.btn{display:block;text-align:center;background:#00e676;color:#04210f;font-weight:700;padding:16px;border-radius:14px;text-decoration:none;margin:22px 0;font-size:18px}
+.card{background:#16221b;border:1px solid #1f3a2a;border-radius:16px;padding:16px;margin:14px 0}
+li{margin:6px 0}
+small{color:#7f968a}
+</style></head><body><main>
+<h1>Game Booster</h1>
+<p>Checks your connection before you play eFootball, Free Fire, PUBG Mobile and Call of Duty, and shows your ping live while you play.</p>
+<div class="card" id="inv" style="display:none"></div>
+<a class="btn" id="dl" href="https://github.com/parvej-89/parvej-89.github.io/releases/latest/download/GameBooster.apk">Download for Android</a>
+<div class="card"><b>What you get</b><ul>
+<li>GET READY: fast DNS, Do Not Disturb, connection check</li>
+<li>A small floating ping bar over your game</li>
+<li>Optional faster route, graphs of your last games</li></ul></div>
+<div class="card"><b>How to install</b><ol>
+<li>Tap Download and open the file.</li>
+<li>If Android asks, allow installs from your browser or files app.</li>
+<li>If Play Protect warns about an unknown developer, choose Install anyway. The app is not on the Play Store.</li></ol></div>
+<small>Android only. Free to use, with ads. Premium removes them.</small>
+<script>
+(function () {
+  var m = /[?&]ref=([A-Za-z0-9]{6})(?:&|$)/.exec(location.search);
+  if (!m) return;
+  var code = m[1].toUpperCase();
+  var inv = document.getElementById("inv");
+  inv.style.display = "block";
+  inv.innerHTML = "<b>You were invited</b><br>Install the app and sign up. You get 3 days of Premium free. Your friend code: <b>" + code + "</b><br><small>The app picks the code up by itself. If it does not, type it in the Plans tab.</small>";
+  document.getElementById("dl").addEventListener("click", function () {
+    var text = "GBREF:" + code;
+    function old() {
+      try {
+        var t = document.createElement("textarea");
+        t.value = text;
+        document.body.appendChild(t);
+        t.select();
+        document.execCommand("copy");
+        document.body.removeChild(t);
+      } catch (e) {}
+    }
+    try {
+      navigator.clipboard.writeText(text).catch(old);
+    } catch (e) {
+      old();
+    }
+  });
+})();
+</script>
+</main></body></html>
