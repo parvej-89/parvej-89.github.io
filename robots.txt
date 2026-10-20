@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://parvej-89.github.io/sitemap.xml
