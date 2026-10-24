@@ -3,7 +3,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b120e">
 <title>Game Booster - Ping & FPS Booster for eFootball, Free Fire, PUBG, CoD</title>
-<meta name="description" content="See your ping and lag live while you play eFootball, Free Fire, PUBG Mobile and Call of Duty. Free for Android.">
+<meta name="description" content="See your ping, lag and FPS live while you play eFootball, Free Fire, PUBG Mobile and Call of Duty. Tests a faster route before your game opens. Free for Android.">
+<link rel="canonical" href="https://parvej-89.github.io/download.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Game Booster - Ping & FPS Booster for eFootball, Free Fire, PUBG, CoD">
+<meta property="og:description" content="See your ping, lag and FPS live while you play. Tests a faster route before your game opens. Free for Android.">
+<meta property="og:url" content="https://parvej-89.github.io/download.html">
 <style>
 :root{--bg:#0b120e;--card:#13201a;--card2:#0f1913;--line:#1f3a2a;--g:#00e676;--gold:#ffd54f;--red:#ff5252;--tx:#e8f5ec;--mu:#9db3a5}
 *{box-sizing:border-box}
@@ -64,7 +69,7 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 <header>
 <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#04210f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14c0-5 4-9 9-9s9 4 9 9"/><path d="M12 14l4-5"/><circle cx="12" cy="14" r="1.4" fill="#04210f"/></svg></div>
 <h1>Game <span>Booster</span></h1>
-<p class="lead">See your ping and lag live while you play eFootball, Free Fire, PUBG Mobile and Call of Duty, and switch to a faster route when your line gets bad.</p>
+<p class="lead">See your ping, lag and FPS live while you play eFootball, Free Fire, PUBG Mobile and Call of Duty. When your line is slow, the app tests a faster route before the game opens and uses it only if it is really better.</p>
 </header>
 
 <div class="card invite" id="inv" style="display:none"></div>
@@ -80,9 +85,9 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 <h2>What it does</h2>
 <p class="hint">Four things, all in one app.</p>
 <div class="grid">
-<div class="card"><div class="ico">&#9889;</div><h3>GET READY</h3><p class="sub" style="text-align:left;margin:0">One tap prepares your phone: fast DNS, Do Not Disturb, a connection check, then it opens your game.</p></div>
-<div class="card"><div class="ico">&#128200;</div><h3>Live ping bar</h3><p class="sub" style="text-align:left;margin:0">A small bar floats over your game and shows ping, spikes, lost packets, Wi-Fi signal, phone heat, FPS and free memory.</p></div>
-<div class="card"><div class="ico">&#128739;</div><h3>Faster route</h3><p class="sub" style="text-align:left;margin:0">Optional. Sends your game traffic through a private tunnel when your normal line is slow or shaky.</p></div>
+<div class="card"><div class="ico">&#9889;</div><h3>GET READY</h3><p class="sub" style="text-align:left;margin:0">One tap prepares your phone: fast DNS, Do Not Disturb, closing background apps, and a connection check. Then it opens your game.</p></div>
+<div class="card"><div class="ico">&#128200;</div><h3>Live ping bar</h3><p class="sub" style="text-align:left;margin:0">A small bar floats over your game and shows ping, spikes, lost packets, jitter, FPS, Wi-Fi signal, phone heat and free memory.</p></div>
+<div class="card"><div class="ico">&#128739;</div><h3>Faster route</h3><p class="sub" style="text-align:left;margin:0">Optional. If your normal line is slow, the app tests a private tunnel before the game opens and uses it only when it is clearly better.</p></div>
 <div class="card"><div class="ico">&#128338;</div><h3>Session history</h3><p class="sub" style="text-align:left;margin:0">After you play, see a graph of your ping, how many spikes you had, and whether the route helped.</p></div>
 </div>
 </section>
@@ -103,7 +108,7 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 <ol class="steps">
 <li><b>Create your account</b><span>Use your email and a password, or tap Continue with Google. For email sign-up, open the link we send you to verify it, then come back and log in.</span></li>
 <li><b>Pick your game</b><span>On the Home tab choose eFootball, Free Fire, PUBG Mobile or Call of Duty. The game must already be installed.</span></li>
-<li><b>Tap GET READY</b><span>The app checks your connection, turns on Do Not Disturb, then opens the game. A small bar appears on top of it.</span></li>
+<li><b>Tap GET READY</b><span>The app turns on Do Not Disturb, closes background apps, picks the fastest DNS and checks your connection. If your normal ping is under 90 ms it opens the game right away. If not, it first tests the faster route, which takes about 10 to 25 seconds, then opens the game on whichever is better. A small bar appears on top of the game.</span></li>
 <li><b>Allow the permissions, once</b><span>Display over other apps (for the bar), notifications, and Do Not Disturb access. If you use the faster route, Android also shows a VPN request. Tap OK.</span></li>
 <li><b>Play, then look at your session</b><span>When you finish, open the Home tab to see the graph of your last game.</span></li>
 </ol>
@@ -113,26 +118,23 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 <h2>The floating bar, explained</h2>
 <p class="hint">Everything is on one small bar. Drag it anywhere. Tap the minus to shrink it, the X to close it.</p>
 <div class="bar" aria-label="Example of the floating bar">
-<div class="r"><span class="dm">DIRECT</span><span class="dm">ROUTE</span><span class="gr">STABLE 96%</span><span>LOSS 0%</span></div>
-<div class="r"><span class="big gr">53</span><span class="big dm">off</span><span class="gr">ALL GOOD</span><span>SPK 0</span></div>
-<div class="r"><span>JIT 5</span><span>B52 T56 W209</span><span class="gr">Wi-Fi -54 dBm</span><span>DN 0.3 UP 0.1</span><span>33&deg;C 38% 0:25</span></div>
-<div class="r"><span class="gr">FPS 60</span><span>RAM 2.1 GB free</span><span class="dm">USED 12 MB</span></div>
+<div class="r"><span class="dm">DIRECT</span><span class="dm">ROUTE</span><span class="gr">STABLE 96%</span><span>LOSS 0%</span><span class="dm">&ndash; &#10005;</span></div>
+<div class="r"><span class="big gr">53</span><span class="big dm">off</span><span class="gr">ALL GOOD</span><span>SPK 0</span><span class="dm">USED 12M</span></div>
+<div class="r"><span class="gr">FPS 60</span><span>RAM 2.1G free</span><span>JIT 5</span><span class="gr">Wi-Fi -54</span><span>33&deg;C 38% 0:25</span></div>
 </div>
 <div class="card">
 <table>
 <tr><td>DIRECT</td><td>Ping of your normal connection, in milliseconds. Lower is better.</td></tr>
-<tr><td>ROUTE</td><td>Ping when the faster route is on. It shows <b>off</b> when you are on your normal line.</td></tr>
+<tr><td>ROUTE</td><td>Ping when the faster route is on. It shows <b>off</b> when you are on your normal line, and <b>lost</b> if the route stops answering.</td></tr>
 <tr><td>STABLE %</td><td>How steady your line is. 90% or more is stable, 75% to 90% is shaky, lower is unstable.</td></tr>
-<tr><td>LOSS</td><td>Share of checks that got no answer. Anything above 0% can feel like freezing.</td></tr>
-<tr><td>SPK</td><td>Spikes: sudden jumps in ping. A few are normal. Many in a row means a bad line.</td></tr>
-<tr><td>JIT</td><td>Jitter: how much the ping changes from one check to the next. Small is smooth.</td></tr>
-<tr><td>B T W</td><td>Best, typical and worst ping so far.</td></tr>
-<tr><td>Wi-Fi dBm</td><td>Wi-Fi signal. Closer to zero is stronger: -55 or better is excellent, -67 good, -75 weak.</td></tr>
-<tr><td>DN UP</td><td>Download and upload speed right now, in Mbps. If other things are using your line, the bar says BUSY LINE.</td></tr>
-<tr><td>33&deg;C 38%</td><td>Phone temperature and battery. The bar warns when the phone is hot or the battery is low.</td></tr>
-<tr><td>FPS</td><td>Frames per second of your game. Needs a one-time setup, see Advanced below.</td></tr>
-<tr><td>RAM</td><td>Free memory. When it runs low the bar says <b>LOW MEMORY</b>. It only warns you. It never closes your game.</td></tr>
-<tr><td>USED</td><td>Mobile or Wi-Fi data the phone has used since the session started.</td></tr>
+<tr><td>LOSS</td><td>Share of checks that got no answer. A check counts as lost only after a second try also fails. Anything above 0% can feel like freezing.</td></tr>
+<tr><td>SPK</td><td>Spikes: sudden jumps in ping. A few are normal. Many in a row means a bad line. With the route on it shows both, for example <b>D9 R7</b> for direct and route.</td></tr>
+<tr><td>JIT</td><td>Jitter: how much the ping changes from one check to the next. Small is smooth. With the route on it shows direct and route, like <b>26/0</b>.</td></tr>
+<tr><td>Wi-Fi</td><td>Wi-Fi signal in dBm. Closer to zero is stronger: -55 or better is excellent, -67 good, -75 weak. It shows Mobile data when you are not on Wi-Fi.</td></tr>
+<tr><td>33&deg;C 38%</td><td>Phone temperature and battery, then how long the session has run. The bar warns when the phone is hot.</td></tr>
+<tr><td>FPS</td><td>How many frames per second the screen is updating while you play. In a match it matches the game. On still menus it reads lower because the screen is not changing. Needs a one-time setup, see Advanced below.</td></tr>
+<tr><td>RAM</td><td>Free memory. When it runs low the bar says <b>LOW MEMORY</b>. The bar only warns you. It never closes your game.</td></tr>
+<tr><td>USED</td><td>Data the phone has used since the session started. It sits under the minus and X buttons.</td></tr>
 </table>
 </div>
 <div class="card">
@@ -147,12 +149,21 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 <section id="route">
 <h2>Faster route</h2>
 <p class="hint">Found on the Home tab, under the game you picked. It is optional.</p>
-<p>When your normal line is slow, the app can send the game's traffic through a private Cloudflare WARP tunnel built into the app. Sometimes that path is quicker or steadier. Sometimes it is not, so the app lets you test it and shows you the result instead of promising one.</p>
+<p>The faster route sends your game's traffic through a private Cloudflare WARP tunnel built into the app. Sometimes that path is quicker or steadier. Sometimes it is not, so the app tests it first and shows you the result instead of promising one.</p>
+<div class="card">
+<h3>How the app decides</h3>
+<ul class="tips">
+<li><b>Normal ping under 90 ms:</b> the game opens on your normal line. There is nothing to improve, so the route is not tested.</li>
+<li><b>Normal ping 90 ms or more:</b> before the game opens, the app measures your normal line, turns the route on and measures it again. It keeps the route only if it is at least 10 ms faster, loses no more packets and is not shakier. Otherwise it switches the route off and opens the game on your normal line.</li>
+<li><b>During the match:</b> the app never turns the route on, so it cannot interrupt a match to start it.</li>
+<li><b>Going back to normal:</b> if the route stops answering for about 6 seconds, or stays clearly slower than your normal line (40 ms or more for 20 seconds), the app switches back. Any change of connection can make a game pause or reconnect for a moment, so the app only does this when staying would be worse.</li>
+</ul>
+</div>
 <div class="card">
 <table>
-<tr><td>Use it for game</td><td>Turns the faster route on for that game when you press GET READY.</td></tr>
+<tr><td>Use it for game</td><td>Lets the app use the faster route for that game when you press GET READY.</td></tr>
 <tr><td>Route the whole phone</td><td>Sends all apps through the route, not only the game. <b>Keep this ON for eFootball</b>, which may not load without it.</td></tr>
-<tr><td>Switch route by itself</td><td>While you play, the app watches your ping. If it stays above 80 ms for 40 seconds, it turns the route on. If the direct line stays under 80 ms for 40 seconds, it goes back to normal. A switch can pause the game for a moment. This is a Premium feature. Free users can unlock it for one match by watching the ads shown on the button.</td></tr>
+<tr><td>Switch route by itself</td><td>Lets the app decide for you: it tests before the game opens and steps back to your normal line during the match if the route dies or gets clearly worse. This is a Premium feature. Free users can unlock it for one match by watching the ads shown on the button.</td></tr>
 <tr><td>Test with faster route</td><td>Measures your line without the route, then with it, and draws a comparison. Then it switches the route off again.</td></tr>
 <tr><td>Reset route setup</td><td>Use this if the route stops working. It makes a fresh setup next time.</td></tr>
 </table>
@@ -168,15 +179,15 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 </div>
 <div class="card">
 <h3>Network doctor and Phone check</h3>
-<p style="margin:4px 0 0">Network doctor compares your Wi-Fi with mobile data so you can pick the better one. Phone check shows heat and battery. The app can also warn you in the background when your connection turns unstable, or becomes great, so you know when to play.</p>
+<p style="margin:4px 0 0">Network doctor compares your Wi-Fi with mobile data so you can pick the better one. Phone check shows heat, battery and free memory. The app can also warn you in the background when your connection turns unstable, or becomes great, so you know when to play.</p>
 </div>
 </section>
 
 <section id="premium">
 <h2>Free and Premium</h2>
 <div class="grid">
-<div class="card"><h3>Free</h3><p class="sub" style="text-align:left;margin:0">Smart DNS, Wi-Fi check, performance check, server regions, Do Not Disturb, game launcher, the floating bar. Shows ads.</p></div>
-<div class="card" style="border-color:var(--g)"><h3 style="color:var(--g)">Premium</h3><p class="sub" style="text-align:left;margin:0">No ads, route switching by itself, and your full session history.</p></div>
+<div class="card"><h3>Free</h3><p class="sub" style="text-align:left;margin:0">Smart DNS, Wi-Fi check, performance check, server regions, Do Not Disturb, closing background apps, game launcher, the floating bar. Shows ads.</p></div>
+<div class="card" style="border-color:var(--g)"><h3 style="color:var(--g)">Premium</h3><p class="sub" style="text-align:left;margin:0">No ads, the route that decides by itself before and during your match, and your full session history.</p></div>
 </div>
 <h3 style="margin-top:18px">Three ways to get Premium</h3>
 <div class="card"><h3>1. Watch ads</h3><p style="margin:4px 0 0">On the Plans tab tap the Watch button. Watch the number of ads it shows and you get free Premium days. You can repeat it any time.</p></div>
@@ -187,15 +198,17 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 <section id="tips">
 <h2>Tips for a smoother game</h2>
 <div class="card"><ul class="tips">
-<li><b>Use Wi-Fi close to the router.</b> A Wi-Fi signal weaker than -75 dBm causes lag that no booster can fix.</li>
+<li><b>Always start from GET READY.</b> It closes background apps, picks the fastest DNS and decides whether the route is worth using before the game opens.</li>
+<li><b>Use 5 GHz Wi-Fi close to the router.</b> A Wi-Fi signal weaker than -75 dBm causes lag that no booster can fix.</li>
 <li><b>Pause downloads and updates.</b> If the bar says BUSY LINE, something else is using your internet.</li>
 <li><b>Do not judge by one number.</b> One spike is normal. Look at STABLE % and the session graph.</li>
 <li><b>Keep the phone cool.</b> A hot phone slows the game. Take the case off and do not charge while you play.</li>
-<li><b>Close other apps when you see LOW MEMORY.</b> It only warns you, so you decide when.</li>
+<li><b>Watch for LOW MEMORY.</b> The bar only warns you, so you decide what to close.</li>
 <li><b>Switch off battery saver.</b> It can slow the game and the bar.</li>
 <li><b>Try both Wi-Fi and mobile data</b> with Network doctor. The better one changes by time of day.</li>
 <li><b>Check the best hours.</b> Evenings are often busy. The app tracks when your line is best.</li>
 <li><b>Use the test, not a feeling.</b> Run Test with faster route once. Keep it on only if the graph shows it helped.</li>
+<li><b>Use your phone's game mode.</b> Many phones have a built-in game mode with extra touch and network options. Add your game there too.</li>
 </ul></div>
 </section>
 
@@ -215,7 +228,10 @@ footer{margin-top:44px;text-align:center;color:var(--mu);font-size:13px}
 
 <section id="faq">
 <h2>Questions</h2>
-<details><summary>Will it lower my ping?</summary><p>It shows your real ping and can try a faster route. Results depend on your phone, your internet provider and the game server. Use Test with faster route to see the truth for your connection. No app can promise lower ping everywhere.</p></details>
+<details><summary>Will it lower my ping?</summary><p>It shows your real ping, cleans up your phone before you play, and can try a faster route. Results depend on your phone, your internet provider and the game server. If your normal ping is already good, the app leaves it alone. Use Test with faster route to see the truth for your connection. No app can promise lower ping everywhere.</p></details>
+<details><summary>Can the route make the game disconnect?</summary><p>Any change of connection can make a game pause or reconnect for a moment. That is why the app tests the route before the game opens and never turns it on during a match. It switches back to your normal line only if the route stops answering or is clearly worse.</p></details>
+<details><summary>What does GET READY close?</summary><p>It closes background apps that are not part of the system and are not your games. Chat or music apps may restart or need to be opened again. Your game and Game Booster are never closed.</p></details>
+<details><summary>Why does the FPS number look low on menus?</summary><p>The FPS value is how often the screen updates. In a match that follows your game. On still menus the screen is not changing, so the number is lower. That is normal.</p></details>
 <details><summary>Why does Android warn me when I install it?</summary><p>The app is not on the Play Store, so Play Protect shows an unknown developer warning for every app like this. Choose Install anyway.</p></details>
 <details><summary>Does it change or hack my game?</summary><p>No. It never touches the game files. It measures your connection, shows a bar on top of the screen and can use a VPN-style tunnel. Games and publishers set their own rules for third-party tools, so use it at your own choice.</p></details>
 <details><summary>Why does it ask for VPN permission?</summary><p>Only the faster route needs it. Android shows that request for any app that creates a tunnel. If you never use the route, you can say no.</p></details>
